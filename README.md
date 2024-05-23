@@ -1,2 +1,3 @@
-# faustjs-headless
-WP to FaustJS (using Headless CMS)
+# faust-getting-started
+
+Welcome to the Faust getting started example.
