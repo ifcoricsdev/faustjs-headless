@@ -13,10 +13,6 @@ import {
   SEO,
 } from '../components';
 
-import { useEffect } from 'react';
-
-import injectStylesAndScripts from '../utils/loadAssets';
-
 export default function Component(props) {
   // Loading state for previews
   if (props.loading) {
@@ -28,10 +24,6 @@ export default function Component(props) {
   const primaryMenu = props?.data?.headerMenuItems?.nodes ?? [];
   const footerMenu = props?.data?.footerMenuItems?.nodes ?? [];
   const { title, content, featuredImage } = props?.data?.page ?? { title: '' };
-
-  useEffect(() => {
-    injectStylesAndScripts();
-  }, []);
 
   return (
     <>
