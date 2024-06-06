@@ -1,4 +1,4 @@
-const cssFiles = ['./css/style.css', './css/block.css'];
+const cssFiles = ['./css/block.css', './css/main.css'];
 
 const createLinkElement = (href) => {
   const link = document.createElement('link');

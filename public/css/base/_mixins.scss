@@ -1,0 +1,112 @@
+@mixin default-button {
+  background: var(--default-button-color);
+  border-width: 1px 1px 2px 1px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+@mixin default-button-hover {
+  background: var(--hover-button-color)
+}
+
+@mixin transparent-button {
+  background: transparent;
+  color: var(--default-button-color);
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@mixin transparent-button-hovered {
+  background: transparent;
+  color: var(--hover-button-color);
+  border-bottom: 2px solid var(--default-button-hover);
+  text-align: center;
+}
+
+@mixin overlay-50 {
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@mixin background-is-light {
+  color: var(--black);
+}
+ 
+@mixin background-is-dark {
+  color: var(--white);
+}
+
+@mixin hero-heading {
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 60px;
+}
+
+@mixin heading-1 {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 60px;
+}
+
+@mixin heading-2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+@mixin heading-3 {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+@mixin heading-4 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+@mixin heading-5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@mixin heading-6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@mixin spacer-default {
+  width: 50px;
+  margin-bottom: 25px; 
+  background: var(--default-button-color);
+}
+
+@mixin spacer-middle {
+  width: 50px;
+  margin-bottom: 25px !important;
+  margin: 0 auto;
+  background: var(--default-button-color);
+}
+
+@mixin soft-shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+@mixin inner-shadow {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}  
+
+@mixin big-shadow {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+

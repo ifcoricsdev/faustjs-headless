@@ -1,0 +1,40 @@
+// Media queries
+/*
+
+TABLE OF CONTENTS
+- #desktop min width = 1330px and up
+- #laptop min width = 1025px to 1329px
+- #tablet min width = 782px to 1024px
+- #mobile max width = 781px
+- #extra small max width = 600px
+
+*/
+
+@mixin device($breakpoint) {
+    @if $breakpoint==desktop {
+        // - #desktop min width = 1330px and up
+        @media only screen and (min-width: 1330px) {
+        @content; }
+    }
+    @if $breakpoint==laptop {
+        // - #laptop min width = 1025px to 1329px
+        @media only screen and (min-width: 1025px) {
+        @content; }
+    }
+    // tablet
+    @if $breakpoint==landscape {
+        // - #tablet min width = 782px to 1024px
+        @media only screen and (min-width: 782px) {
+        @content; }
+    }
+    // tablet
+    @if $breakpoint==portrait {
+        // - #mobile max width = 781px
+        @media only screen and (max-width: 781px) { @content; }
+    }
+    // extra small
+    @if $breakpoint==mobile {
+        // - #extra small max width = 600px
+        @media only screen and (max-width: 600px) { @content; }
+    }
+}

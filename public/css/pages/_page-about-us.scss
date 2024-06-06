@@ -1,0 +1,51 @@
+.button {
+    @include default-button;
+
+    &:hover {
+        @include default-button-hover;
+    }
+}
+
+.wp-buttons {
+    
+    .cta-submit-button {
+        @include default-button;
+
+        &:hover {
+            @include default-button-hover;
+        }
+    }
+}
+
+ul.menu {
+    list-style: none;
+
+    li {
+
+        a {
+            @include default-button;
+
+            &:hover {
+                @include default-button-hover;
+            }
+
+            span.label {
+                color: var(--secondary);
+            }
+        }
+    }
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 1250px;
+    display: grid;
+
+    @include device(mobile) {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+    }
+    
+}

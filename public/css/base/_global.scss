@@ -1,0 +1,78 @@
+// Global Styles
+/*
+
+TABLE OF CONTENTS
+- #variables
+- #color key
+- #extends
+- #headings and paragraphs
+- #buttons
+- #layout toggle buttons
+- #pills
+- #forms
+- #pullquote & quote
+- #navigation block
+- #pagination
+- #search results page
+- #helper classes
+- #adjustments
+
+*/
+
+// - #variables
+// - #color key
+
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --dark-blue: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+
+      /* Grey scale */
+      --color-gray-50: #FEF5EC;
+      --color-gray-100: #F3EBE2;
+      --color-gray-200: #E6DED5;
+      --color-gray-300: #D3CBC1;
+      --color-gray-400: #ADA59D;
+      --color-gray-500: #8B847C;
+      --color-gray-600: #645D55;
+      --color-gray-700: #514B43;
+      --color-gray-800: #332D26;
+      --color-gray-900: #140C00;
+  
+      /* Orange scale */
+      --color-orange-100: #FFE1B2;
+      --color-orange-200: #FFCD80;
+      --color-orange-300: #FFB84D;
+      --color-orange-400: #FFA926;
+      --color-orange-500: #FF9A00;
+      --color-orange-600: #FB8E00;
+      --color-orange-700: #F57E00;
+      --color-orange-800: #EF6E00;
+      --color-orange-900: #E65300;
+  
+      /* Button Colors */
+      --default-button-color: #FF7538;
+      --hover-button-color: #F3540E;
+
+      /* Table Colors */ 
+      --table-header-color: #008568;
+      --table-header-border-color: #2B6CB0;
+      --table-white-color: #ffffff;
+      --table-black-color: #000000;
+      --table-light-grey-color: #efefef;
+      --table-medium-grey-color: #dcdcdc;
+      --table-grey-color: #717171;
+      --table-dark-grey-color: #3b3b3b;
+
+     /*Footer Colors */
+     --footer-main-color: #222745;
+     --footer-copyright-color: #37d0bf;
+}
+
+a.button {
+    color: var(--primary);
+}
+
+   

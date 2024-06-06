@@ -1,0 +1,18 @@
+.acc-upper-text{
+    @include heading-5
+}
+
+.accordionjs .acc_section > .acc_head svg.accordion_icon{
+    filter: invert(30%) sepia(90%) saturate(1500%) hue-rotate(15deg) brightness(110%) contrast(110%);
+
+}
+
+.background-is-dark .accordionjs p.acc-upper-text,
+.background-is-dark ul.accordionjs li div.acc-lower-text{
+    @include background-is-dark;
+  }
+  
+.background-is-light .accordionjs p.acc-upper-text,
+.background-is-light ul.accordionjs li div.acc-lower-text{
+    @include background-is-light;
+  }

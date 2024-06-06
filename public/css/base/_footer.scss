@@ -1,0 +1,57 @@
+.wp-site-blocks {
+    .site-footer {
+        .site-footer-wrap {
+            h4 {
+                @include heading-4;
+                @include background-is-dark;
+            }
+
+            h5 {
+                @include heading-5;
+                @include background-is-dark;
+            }
+
+            p {
+                a {
+                    @include background-is-dark;
+                }
+            }
+
+            background-color: var(--footer-main-color);
+            color: var(--white);
+
+            .site-bottom-footer-wrap {
+                background-color: var(--footer-copyright-color);
+
+                .footer-html-inner {
+                    color: var(--white);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+
+            .inline-form {
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .kadence-blocks-form-field,
+                .kb-submit-field {
+                    flex: 1;
+                    margin-bottom: 0;
+                }
+
+                .kb-forms-submit {
+                    flex: 0 0 auto;
+                    box-sizing: border-box;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    align-items: center;
+                    display: flex;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

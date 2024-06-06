@@ -1,0 +1,34 @@
+.content-area {
+    .is-style-card-shadow--softdrop {
+        @include soft-shadow;
+
+        h2 {
+            @include hero-heading;
+        }
+        h3 {
+            @include heading-3;
+        }
+    }
+
+    .is-style-card-shadow--inner {
+        @include inner-shadow;
+
+        h2 {
+            @include hero-heading;
+        }
+        h3 {
+            @include heading-3;
+        }
+    }
+
+    .is-style-card-shadow--big {
+        @include big-shadow;
+
+        h2 {
+            @include hero-heading;
+        }
+        h3 {
+            @include heading-3;
+        }
+    }
+}

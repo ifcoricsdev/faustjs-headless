@@ -1,0 +1,73 @@
+.content-wrap {
+    &.full-width-hero-overlay-30,
+    &.full-width-hero-overlay-linear,
+    &.full-width-hero-overlay-linear-middle,
+    &.full-width-hero-overlay-70,
+    &.full-width-hero-single-left-overlay-30,
+    &.full-width-hero-single-left-overlay-linear,
+    &.full-width-hero-single-left-overlay-linear-middle,
+    &.full-width-hero-single-left-overlay-70 {
+        @include background-is-dark;
+
+        h1 {
+            @include heading-1;
+        }
+
+        h5 {
+            @include heading-5;
+            letter-spacing: 5px;
+        }
+
+        &.wp-block-spacer {
+            @include spacer-default;
+        }
+    }
+
+    &.full-width-hero-middle-overlay-30,
+    &.full-width-hero-middle-overlay-linear,
+    &.full-width-hero-middle-overlay-linear-middle,
+    &.full-width-hero-middle-overlay-70 {
+        @include background-is-dark;
+
+        h1 {
+            @include heading-1;
+        }
+
+        h5 {
+            @include heading-5;
+            letter-spacing: 5px;
+        }
+
+        &.wp-block-spacer {
+            @include spacer-middle;
+        }
+    }
+
+    &.full-width-hero-gallery-overlay-30,
+    &.full-width-hero-gallery-overlay-linear,
+    &.full-width-hero-gallery-overlay-linear-middle,
+    &.full-width-hero-gallery-overlay-70 {
+        @include background-is-dark;
+
+        h1 {
+            @include heading-1;
+        }
+
+        h5 {
+            @include heading-5;
+            letter-spacing: 5px;
+        }
+
+        &.wp-block-spacer {
+            @include spacer-middle;
+        }
+
+        &.kb-button {
+            @include default-button;
+
+            &:hover {
+                @include default-button-hover;
+            }
+        }
+    }
+}

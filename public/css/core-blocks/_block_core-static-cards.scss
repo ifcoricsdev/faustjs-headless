@@ -1,0 +1,1075 @@
+div.if-dynamic-cards-wrapper.static-cards-wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  
+    &.if-dynamic-cards-wrapper-header {
+      padding: 60px 0 0 0;
+    }
+  
+    nav.if-dynamic-cards-filter {
+      display: block;
+      margin: 0 0 60px 0;
+      padding: 0;
+  
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+  
+        li {
+          display: inline-block;
+          margin: 0 24px;
+          &:before {
+            content: '';
+            display: none;
+          }
+  
+          a {
+            display: block;
+            margin: 0;
+            padding: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+  
+            &:hover,
+            &.selected {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  
+    .if-dynamic-cards-loadmore-wrapper {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 15px 0 0;
+  
+      button.if-dynamic-cards-loadmore-button {
+        display: block;
+        width: max-content;
+        border: 0 none;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 6px;
+        line-height: 1;
+        font-weight: bold;
+        max-width: 150px;
+        color: #FFF;
+        background: rgba(0, 87, 200, 0.7);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+  
+        &:hover {
+          background: rgba(0, 87, 200, 0.9);
+        }
+  
+        &:disabled {
+          background: #666;
+          cursor: default;
+        }
+      }
+    }
+  
+    &.template-display-column-3.if-dynamic-cards-no-slider {
+      .if-dynamic-cards-content-wrapper {
+        .if-dynamic-cards-content {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+  
+          @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+  
+          @media (max-width: 720px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+      }
+    }
+  
+    &.template-display-column-4.if-dynamic-cards-no-slider {
+      .if-dynamic-cards-content-wrapper {
+        .if-dynamic-cards-content {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 20px;
+  
+          @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+  
+          @media (max-width: 720px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+      }
+    }
+  
+    &.if-dynamic-cards-no-slider {
+  
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+  
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+  
+          @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+  
+          @media (max-width: 720px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+  
+          .if-dynamic-card-wrapper {
+            display: block;
+  
+            .if-dynamic-card {
+              position: relative;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              display: block;
+              width: 100%;
+              padding: 0;
+              min-height: 420px;
+              height: 100%;
+  
+            }
+  
+            &.if-dynamic-cards-content-slider {
+              .if-dynamic-card {
+  
+              }
+            }
+          }
+  
+          @media (max-width: 1024px) {
+            .if-dynamic-card-wrapper {
+  
+            }
+          }
+  
+          @media (max-width: 720px) {
+            .if-dynamic-card-wrapper {
+  
+            }
+          }
+  
+  
+        }
+      }
+    }
+  
+    // &.template-display-column-3.if-dynamic-cards-slider {
+    //   .if-dynamic-cards-content-wrapper {
+    //     .if-dynamic-cards-content {
+    //       .if-dynamic-card-wrapper {
+    //         width: 33.3333%;
+    //       }
+    //     }
+    //   }
+    // }
+  
+    &.template-display-column-4.if-dynamic-cards-slider {
+      .if-dynamic-cards-content-wrapper {
+        .if-dynamic-cards-content {
+          .if-dynamic-card-wrapper {
+            width: 25%;
+          }
+        }
+      }
+    }
+  
+    &.if-dynamic-cards-slider {
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+          display: block;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          text-align: left;
+  
+          .if-dynamic-card-wrapper {
+            display: inline-block;
+            width: 33.3333%;
+            padding: 10px;
+            /*
+            &:nth-child(3n + 1) {
+              padding-right: 10px;
+            }
+  
+            &:nth-child(3n + 3) {
+              padding-left: 10px;
+            }
+  
+            &:nth-child(3n + 2) {
+              padding: 0 5px;
+            }
+            */
+  
+            .if-dynamic-card {
+              display: block;
+              position: relative;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              display: block;
+              width: 100%;
+              padding: 10%;
+              min-height: 420px;
+              height: 100%;
+  
+            }
+  
+            &.if-dynamic-cards-content-slider {
+              .if-dynamic-card {
+  
+              }
+            }
+          }
+  
+          @media (max-width: 1024px) {
+            .if-dynamic-card-wrapper {
+              display: inline-block;
+              width: 50%;
+              padding: 10px;
+            }
+          }
+  
+          @media (max-width: 720px) {
+            .if-dynamic-card-wrapper {
+              display: block;
+              width: 100%;
+              padding: 0;
+            }
+          }
+        }
+  
+      }
+    }
+  
+    &.template-cards-blog,
+    &.template-cards-case-studies,
+    &.template-cards-case-studies-tags,
+    &.template-cards-cnr-no-pill,
+    &.template-cards-resource-type,
+    &.template-cards-dynamic,
+    &.template-cards-thought-leadership {
+  
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+  
+          .if-dynamic-card {
+  
+  
+            .if-dynamic-card-header {
+              background: transparent;
+              width: 100%;
+              height: 50%;
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              box-sizing: border-box;
+            }
+  
+            .if-dynamic-card-content {
+              @include overlay-50;
+              width: 100%;
+              height: 50%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              padding: 15px;
+              box-sizing: border-box;
+  
+              .if-dynamic-card-type {
+                text-align: center;
+                font-family: 'Helvetica', 'sans-serif';
+                font-weight: bold;
+                font-size: 12px;
+                background: var(--default-button-color);
+                color: var(--secondary);
+                padding: 6px 18px;
+                line-height: 1;
+                border-radius: 10px;
+                margin: 0 auto;
+  
+              }
+  
+              .if-dynamic-card-title {
+                text-align: left;
+                @include heading-6;
+                @include background-is-dark;
+                display: flex;
+                margin-bottom: 10px;
+                flex-grow: 1;
+                align-items: center;
+                line-height: 1.3;
+                
+              }
+  
+              .if-dynamic-card-more {
+                @include transparent-button;
+
+            }
+            .if-dynamic-card-more:hover{
+                    border-bottom: 2px solid var(--hover-button-color);
+                    color: var(--hover-button-color);
+            }
+  
+            }
+          }
+        }
+      }
+    }
+  
+    &.template-cards-blog {
+  
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+  
+          .if-dynamic-card {
+  
+            .if-dynamic-card-header {
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+  
+            .if-dynamic-card-more {
+              display: block;
+              width: 100%;
+              margin: 0;
+              font-weight: bold;
+              max-width: 120px;
+              background: #FFF;
+              color: #666;
+              text-align: left;
+              text-decoration: none;
+            }
+          }
+  
+        }
+  
+      }
+    }
+  
+    &.template-cards-case-studies,
+    &.template-cards-case-studies-tags,
+    &.template-cards-cnr-no-pill,
+    &.template-cards-resource-type,
+    &.template-cards-dynamic {
+  
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+  
+          .if-dynamic-card {
+  
+            .if-dynamic-card-header {
+              padding: 24px 30px;
+              text-align: center;
+  
+              .if-dynamic-card-type {
+                display: none;
+                text-align: center;
+                font-weight: bold;
+                font-size: 12px;
+                background: rgba(0, 87, 200, 0.7);
+                color: #FFF;
+                padding: 6px 18px;
+                line-height: 1;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                margin: 0 auto;
+              }
+  
+            }
+  
+            .if-dynamic-card-content {
+              .if-dynamic-card-type {
+                display: none;
+              }
+  
+              .if-dynamic-card-more {
+                display: block;
+                width: 100%;
+                font-weight: bold;
+                max-width: 120px;
+                text-align: center;
+                text-decoration: none;
+                align-self: flex-start;
+  
+                &:after {
+                  content: ' \00BB';
+                }
+              }
+            }
+          }
+        }
+  
+      }
+    }
+  
+    &.template-cards-thought-leadership {
+  
+      .if-dynamic-cards-content-wrapper {
+  
+        .if-dynamic-cards-content {
+  
+          .if-dynamic-card {
+  
+            .if-dynamic-card-header {
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+  
+            .if-dynamic-card-content {
+              height: 100%;
+  
+              .if-dynamic-card-more {
+                display: block;
+                width: 100%;
+                font-weight: bold;
+                max-width: 120px;
+                text-align: center;
+                text-decoration: none;
+  
+                &:after {
+                  content: ' \00BB';
+                }
+              }
+            }
+          }
+  
+        }
+      }
+  
+    }
+  
+  
+  }
+
+  div.if-dynamic-cards-wrapper .if-dynamic-cards-content-wrapper .if-dynamic-cards-content .if-dynamic-card .if-dynamic-card-header .if-dynamic-card-type{
+    display: none;
+  }
+
+  div.if-dynamic-cards-wrapper .if-dynamic-cards-content-wrapper .if-dynamic-cards-content .if-dynamic-card .if-dynamic-card-header {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+a.if-dynamic-card.card-type- {
+  text-decoration: none;
+
+}
+
+
+
+//start of satic cards default styles
+  
+
+div.if-dynamic-cards-wrapper.static-cards-wrapper {
+// Static Cards: All Data - Centered
+  &.template-cards-all-data-centered {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            .if-dynamic-card-type {
+              text-align: center;
+              font-family: 'Helvetica', 'sans-serif';
+              font-weight: bold;
+              font-size: 12px;
+              background: var(--default-button-color);
+              color: var(--secondary);
+              padding: 6px 18px;
+              line-height: 1;
+              border-radius: 10px;
+              margin: 0 auto;
+              text-decoration: none;
+              
+            }
+
+            .if-dynamic-card-title {
+              text-align: center;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              @include transparent-button;
+
+          }
+          .if-dynamic-card-more:hover{
+                  border-bottom: 2px solid var(--hover-button-color);
+                  color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+  
+// Static Cards: All Data - Half Overlay
+  &.template-cards-all-data-half-overlay {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+          padding: 20px;
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 50%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+          .if-dynamic-card-type {
+              text-align: center;
+              font-family: 'Helvetica', 'sans-serif';
+              font-weight: bold;
+              font-size: 12px;
+              background: var(--default-button-color);
+              color: var(--secondary);
+              padding: 6px 18px;
+              line-height: 1;
+              border-radius: 10px;
+              margin: 0 auto;
+
+            }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            
+
+            .if-dynamic-card-title {
+              text-align: left;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              @include transparent-button;
+
+          }
+          .if-dynamic-card-more:hover{
+                  border-bottom: 2px solid var(--hover-button-color);
+                  color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+
+
+// Static Cards: No Pill - Centered
+
+  &.template-cards-no-pill-centered {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            .if-dynamic-card-type {
+              display: none;
+              
+            }
+
+            .if-dynamic-card-title {
+              text-align: center;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              @include transparent-button;
+
+          }
+          .if-dynamic-card-more:hover{
+                  border-bottom: 2px solid var(--hover-button-color);
+                  color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+
+
+// Static Cards: No Pill - Half Overlay
+
+  &.template-cards-no-pill-half-overlay {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+          padding: 20px;
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 50%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+          .if-dynamic-card-type {
+              display: none;
+
+            }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            
+
+            .if-dynamic-card-title {
+              text-align: left;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              @include transparent-button;
+
+          }
+          .if-dynamic-card-more:hover{
+                  border-bottom: 2px solid var(--hover-button-color);
+                  color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+
+
+ // Static Cards: Potfolio - Centered
+ 
+
+  &.template-cards-portfolio-centered {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            .if-dynamic-card-type {
+              display: none;
+              
+            }
+
+            .if-dynamic-card-title {
+              text-align: center;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              display: none;
+
+          }
+          
+
+          }
+        }
+      }
+    }
+  }
+
+
+// Static Cards: Potfolio - Half Overlay
+
+
+  &.template-cards-portfolio-half-overlay {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+          padding: 20px;
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 30%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+          .if-dynamic-card-type {
+              display: none;
+
+            }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            
+
+            .if-dynamic-card-title {
+              text-align: left;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              margin-bottom: 10px;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              display: none;
+
+          }
+          
+
+          }
+        }
+      }
+    }
+  }
+
+ // Static Cards: Headline + button - Centered
+
+
+  &.template-cards-headline-button-centered {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-top:44.4%;
+            padding-left: 12%;
+            padding-right: 12%;
+
+            .if-dynamic-card-type {
+              display: none;
+              
+            }
+
+            .if-dynamic-card-title {
+              text-align: center;
+              @include heading-6;
+              @include background-is-dark;
+              text-align: center;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 27px;
+              display: flex;
+              margin-bottom: 10px;
+              align-items: center;
+              line-height: 1.3;
+            }
+
+            .if-dynamic-card-more {
+              @include default-button;
+              @include background-is-dark;
+
+          }
+          .if-dynamic-card-more:hover{
+                  background-color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+ // Static Cards: Headline + button - Half Overlay
+
+  &.template-cards-headline-button-half-overlay {
+
+    .if-dynamic-cards-content-wrapper {
+
+      .if-dynamic-cards-content {
+
+        .if-dynamic-card {
+          padding: 20px;
+
+          .if-dynamic-card-header {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 30%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+          }
+          .if-dynamic-card-type {
+              display: none;
+
+            }
+
+          .if-dynamic-card-content {
+            @include overlay-50;
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 30%;
+
+            
+
+            .if-dynamic-card-title {
+              text-align: left;
+              @include heading-6;
+              @include background-is-dark;
+              display: flex;
+              flex-grow: 1;
+              align-items: center;
+              line-height: 1.3;
+              margin-bottom: 10px;
+            }
+
+            .if-dynamic-card-more {
+              @include default-button;
+              @include background-is-dark;
+
+          }
+          .if-dynamic-card-more:hover{
+                  background-color: var(--hover-button-color);
+          }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+

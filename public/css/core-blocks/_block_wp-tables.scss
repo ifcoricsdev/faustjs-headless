@@ -1,0 +1,190 @@
+.wp-block-table {
+  &.is-style-table-1,
+  &.is-style-table-2 {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+  
+      th {
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--table-header-color);
+      }
+  
+      tbody {
+        tr:first-child {
+          border-top: 3px solid var(--table-black-color);
+        }
+      }
+  
+      tr {
+        border-bottom: 1px solid var(--table-black-color);
+      }
+  
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+  
+      tfoot {
+        border-top: 3px solid var(--color-gray-500);
+      }
+    }
+  
+    &.wp-element-caption {
+      text-align: left;
+      margin-top: -20px;
+      font-style: italic;
+    }
+  }
+  
+  &.is-style-table-3 {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th {
+        text-transform: uppercase;
+      }
+      th,
+      td {
+        text-align: left;
+
+        &:nth-child(3n + 1) {
+          background-color: var(--table-white-color);
+        }
+        &:nth-child(3n + 2) {
+          background-color: var(--table-light-grey-color);
+        }
+        &:nth-child(3n) {
+          background-color: var(--table-grey-color);
+          color: var(--table-white-color);
+        }
+      }
+
+      tbody {
+        tr:first-child {
+          td {
+            &:nth-child(3n + 1),
+            &:nth-child(3n + 2) {
+              border-top: 3px solid var(--table-black-color);
+            }
+            &:nth-child(3n) {
+              border-top: 3px solid var(--table-white-color);
+            }
+          }
+        }
+
+        tr {
+          &:nth-child(3n - 1),
+          &:nth-child(3n) {
+            td {
+              &:nth-child(3n + 1),
+              &:nth-child(3n + 2) {
+                border-top: 1px solid var(--table-medium-grey-color);
+              }
+              &:nth-child(3n) {
+                border-top: 1px solid var(--table-white-color);
+              }
+            }
+          }
+        }
+      }
+
+      tfoot {
+        th,
+        td {
+          font-weight: 700;
+
+          &:nth-child(3n + 1),
+          &:nth-child(3n + 2) {
+            border-top: 3px solid var(--table-black-color);
+          }
+          &:nth-child(3n) {
+            border-top: 3px solid var(--table-white-color);
+          }
+        }
+      }
+    }
+  }
+
+  &.is-style-table-4 {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        background-color: var(--table-dark-grey-color);
+        color: white;
+        text-align: left;
+        text-transform: uppercase;
+      }
+  
+      td {
+        background-color: var(--table-white-color);
+        border-top: 1px solid var(--table-black-color);
+  
+        &:nth-child(6n + 1) {
+          background-color: var(--table-grey-color);
+          color: var(--table-white-color);
+          border-top: 1px solid var(--table-white-color);
+        }
+  
+        &:nth-child(6n + 3),
+        &:nth-child(6n + 5) {
+          background-color: var(--table-light-grey-color);
+        }
+      }
+  
+      tbody {
+        tr:first-child {
+          td {
+            border-top: none; 
+          }
+        }
+      }
+  
+      tfoot {
+        font-weight: 700;
+        border-top: 3px solid var(--table-black-color);
+  
+        td:nth-child(6n + 1) {
+          border-top: 3px solid var(--table-white-color);
+          color: var(--table-white-color);
+        }
+      }
+    }
+  }
+  
+  &.is-style-table-5 {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        background-color: var(--table-dark-grey-color);
+        color: white;
+        text-align: left;
+        text-transform: uppercase;
+      }
+  
+      td {
+        background-color: var(--table-white-color);
+        border-top: 1px solid var(--table-black-color);
+      }
+  
+      tbody {
+        tr:first-child {
+          td {
+            border-top: none; 
+          }
+        }
+      }
+  
+      tfoot {
+        font-weight: 700;
+        border-top: 3px solid var(--table-black-color);
+      }
+    }
+  }
+}
