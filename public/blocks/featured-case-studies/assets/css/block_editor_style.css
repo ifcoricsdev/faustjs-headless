@@ -1,0 +1,60 @@
+/* Styles for the IF Thought Leadership Cards block */
+
+.editor-styles-wrapper .ibf-cards.feat-cs-cards {
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  flex-flow: row nowrap
+}
+
+.editor-styles-wrapper .ibf-cards.feat-cs-cards .feat-cs-card {
+  position: relative;
+  margin-right: 20px;
+  padding: 40px 15px;
+  min-width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.editor-styles-wrapper .slider-left-right-arrows {
+  display:none;
+}
+
+.editor-styles-wrapper .ibf-cards.feat-cs-cards .feat-cs-card.light-color-bg {
+  color: #000000;
+}
+
+.editor-styles-wrapper .ibf-cards.feat-cs-cards .feat-cs-card.light-color-bg {
+  color: #000000;
+}
+
+.ibf-cards.feat-cs-cards a.feat-cs-card {
+  position: relative;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.ibf-cards.feat-cs-cards a.feat-cs-card div.feat-cs-info-container {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.ibf-cards.feat-cs-cards a.feat-cs-card div.feat-cs-info-container .feat-cs-card-title {
+  text-transform: lowercase;
+  color: #FFFFFF;
+  padding: 30px 0 20px 0;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.ibf-cards.feat-cs-cards a.feat-cs-card div.feat-cs-info-container p {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}

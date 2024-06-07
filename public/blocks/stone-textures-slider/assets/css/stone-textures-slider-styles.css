@@ -1,0 +1,102 @@
+.ibf-stone-textures-slider.stone-textures-slider-container {
+  width: 100%;
+  margin: 100px -15px 20px -15px;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container.stones-cards-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 50px 0 20px 0;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container.stones-cards-columns .stone-textures-card {
+  width: 200px;
+  padding: 0;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .flickity-button.flickity-prev-next-button {
+  background-color: transparent;
+  color: #eeb310;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+  left: unset;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card {
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 20%;
+  margin-bottom: 25px;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card .stone-card-image-and-title-container {
+  display: block;
+  margin: auto;
+  width: 225px;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card .stone-card-image-and-title-container .stone-card-image {
+  height: 225px;
+  width: 225px;
+  background-size: cover;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card .stone-card-title {
+  margin-top: 10px;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card .stone-material-text {
+  width: 225px;
+  margin: 5px auto;
+  padding-bottom: 10px;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card .stone-detail-text {
+  width: 225px;
+  margin: 5px auto;
+  color: #5b5b5b;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .flickity-button.flickity-prev-next-button svg {
+  display: none;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .flickity-button.flickity-prev-next-button.next {
+  top: -70px;
+  right: 15px;
+  transform: rotate(180deg);
+  background-size: contain;
+}
+
+.ibf-stone-textures-slider.stone-textures-slider-container .flickity-button.flickity-prev-next-button.previous {
+  right: 82px;
+  top: -45px;
+  background-size: contain;
+}
+
+/* media queries */
+@media screen and (max-width: 1100px) {
+  .ibf-stone-textures-slider.stone-textures-slider-container .stone-textures-card {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .ibf-stone-textures-slider.stone-textures-slider-container.stones-cards-columns {
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ibf-stone-textures-slider.stone-textures-slider-container.stones-cards-columns {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}

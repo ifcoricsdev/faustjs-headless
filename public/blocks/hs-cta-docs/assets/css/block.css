@@ -1,0 +1,99 @@
+/* ** Migrated from Hardscapes (SALTO) ** */
+
+.tech-library ul.flex li {
+  width:350px; 
+  height:70px; 
+  font-size:18px;
+  line-height:18px;
+  list-style-type: none;
+  margin: 10px;
+}
+@media (min-width: 992px) {
+  /* MEDIUM */
+  .tech-library ul.flex li {
+    width:350px; 
+    height:70px; 
+    font-size:18px;
+    line-height:18px;
+  list-style-type: none;
+    margin: 10px;
+  }
+}
+
+.tech-library ul.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.tech-library a.cta_button {
+  will-change: border-color,color;
+  -webkit-transition: color 0.2s, border-color 0.2s;
+  -moz-transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s;
+  display: table;
+  width: 100%;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 60px 10px 25px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+
+.tech-library a.cta_button.install:after, 
+.tech-library a.cta_button.install:before, 
+.tech-library a.cta_button.sheet:after, 
+.tech-library a.cta_button.sheet:before, 
+.tech-library a.cta_button.care:after, 
+.tech-library a.cta_button.care:before {
+  content: "";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 24px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  margin: -14px 0 0 0;
+  right: 20px;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.tech-library a.cta_button.install:hover:before {
+  background-image: url(https://hardscapes.polycor.com/wp-content/themes/theme_hardscape/images/svg/install_hover.svg);
+}
+.tech-library a.cta_button.install:before {
+  background-image: url(https://hardscapes.polycor.com/wp-content/themes/theme_hardscape/images/svg/install.svg);
+}
+.tech-library a.cta_button.sheet:before {
+  background-image: url(https://hardscapes.polycor.com/wp-content/themes/theme_hardscape/images/svg/sheet.svg);
+}
+.tech-library a.cta_button.sheet:hover:before {
+  background-image: url(https://hardscapes.polycor.com/wp-content/themes/theme_hardscape/images/svg/sheet_hover.svg);
+}
+.tech-library a.cta_button span {
+  display: table-cell;
+  height: 48px;
+  vertical-align: middle;
+  text-align: left;
+  width: 250px;
+  margin: 6px 4px;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.tech-library a.cta_button:hover {
+  color: #eeb310;
+  border-color: #eeb310;
+}

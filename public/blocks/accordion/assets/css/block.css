@@ -1,0 +1,17 @@
+/*
+** Accordion Block style overrides
+**
+*/
+
+.accordionjs .acc_section > .acc_content a {
+  text-decoration: none!important;
+}
+.acc_content p {
+  font-weight: 300;
+  font-style: normal;
+}
+.accordionjs .acc_section.acc_active {
+  outline-style: dotted;
+  outline-color: black;
+  outline-width: thin;
+}

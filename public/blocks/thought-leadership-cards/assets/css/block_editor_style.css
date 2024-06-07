@@ -1,0 +1,109 @@
+/* Styles for the IF Thought Leadership Cards block */
+
+.editor-styles-wrapper .ibf-cards.tl-cards {
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  flex-flow: row nowrap
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card {
+  position: relative;
+  margin-right: 20px;
+  padding: 40px 15px;
+  min-width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.editor-styles-wrapper .slider-left-right-arrows {
+  display:none;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card.light-color-bg {
+  color: #000000;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card.light-color-bg h3 {
+  color: #000000;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards a.ibf-cards-card {
+  text-decoration: none;
+  flex-basis: 50%;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card h3 {
+  text-transform: lowercase;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 30px 0;
+  font-size: 22px;
+  width: 100%;
+  color: white;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card div.tl-card-pt-pill {
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  width: max-content;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card.light-color-bg div.tl-card-pt-pill {
+  background-color: #222222;
+  border: 2px solid #222222;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card div.tl-card-pt-pill p {
+  padding: 0 20px;
+  font-weight: 800;
+  font-size: 22px;
+  color: #000000;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card.light-color-bg div.tl-card-pt-pill p {
+  color: #FFFFFF !important;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card span.tl-card-link p {
+  text-decoration: underline;
+  display: inline;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card.light-color-bg span.tl-card-link {
+  color: #1e1e1e;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card span.tl-card-link,
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card span.tl-card-link p {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.editor-styles-wrapper .ibf-cards.tl-cards .ibf-cards-card span.tl-card-link {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0);
+}
+
+.editor-styles-wrapper .tl-cards-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .editor-styles-wrapper h1.tl-cards-title.with-slider {
+    margin-bottom: 15px;
+  }
+}
