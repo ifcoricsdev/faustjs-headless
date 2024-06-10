@@ -6,20 +6,25 @@ import '@faustwp/core/dist/css/toolbar.css';
 import '../styles/global.scss';
 
 import Head from 'next/head';
-import { loadStyles } from '../utils/loadStyles';
-import { loadScripts } from '../utils/loadScripts';
+import { loadAccordionAssets } from '../utils/accordion/loadAssets';
+import { loadStaticCardsAssets } from '../utils/static-cards/loadAssets';
+
+import { getBackgroundPath } from '../utils/static-cards/getBackgroundPath';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
+  getBackgroundPath();
+
   useEffect(() => {
-    loadStyles();
-    loadScripts();
+    loadAccordionAssets();
+    loadStaticCardsAssets();
   }, []);
 
   return (
     <FaustProvider pageProps={pageProps}>
       <Head>
+        <link rel='stylesheet' href='./css/main.css' />
         <script
           src='https://code.jquery.com/jquery-3.7.1.min.js'
           async

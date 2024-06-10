@@ -7,13 +7,14 @@ const createScriptElement = (src) => {
 
 export const loadScripts = async () => {
   try {
-    // Fetch the JSON file containing the list of JS files from the root directory
     const response = await fetch('../jsFiles.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
     const jsFiles = await response.json();
 
-    // Dynamically load each JS file
-    jsFiles.forEach((file) => {
-      const script = createScriptElement(file);
+    jsFiles.forEach((src) => {
+      const script = createScriptElement(src);
       document.body.appendChild(script);
     });
   } catch (error) {

@@ -7,11 +7,12 @@ const createLinkElement = (href) => {
 
 export const loadStyles = async () => {
   try {
-    // Fetch the JSON file containing the list of CSS files from the root directory
     const response = await fetch('../cssFiles.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
     const cssFiles = await response.json();
 
-    // Dynamically load each CSS file
     cssFiles.forEach((href) => {
       const link = createLinkElement(href);
       document.head.appendChild(link);
