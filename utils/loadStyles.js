@@ -1,5 +1,3 @@
-const cssFiles = ['./css/block.css', './css/main.css'];
-
 const createLinkElement = (href) => {
   const link = document.createElement('link');
   link.href = href;
@@ -7,9 +5,18 @@ const createLinkElement = (href) => {
   return link;
 };
 
-export const loadStyles = () => {
-  cssFiles.forEach((href) => {
-    const link = createLinkElement(href);
-    document.head.appendChild(link);
-  });
+export const loadStyles = async () => {
+  try {
+    // Fetch the JSON file containing the list of CSS files from the root directory
+    const response = await fetch('../cssFiles.json');
+    const cssFiles = await response.json();
+
+    // Dynamically load each CSS file
+    cssFiles.forEach((href) => {
+      const link = createLinkElement(href);
+      document.head.appendChild(link);
+    });
+  } catch (error) {
+    console.error('Failed to load CSS files:', error);
+  }
 };
