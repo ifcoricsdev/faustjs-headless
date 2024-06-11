@@ -1,0 +1,8 @@
+div.wp-block-group.ibf-video-card-group .ibf-video-card {
+  width: 100%;
+}
+
+.ibf-video-card a.ibf-video-card-image-container {
+  height: auto !important;
+  min-height: 300px !important;
+}

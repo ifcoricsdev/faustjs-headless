@@ -6,6 +6,7 @@ import '@faustwp/core/dist/css/toolbar.css';
 import '../styles/global.scss';
 
 import Head from 'next/head';
+import { loadVideoCardAssets } from '../utils/video-card/loadAssets';
 import { loadAccordionAssets } from '../utils/accordion/loadAssets';
 import { loadStaticCardsAssets } from '../utils/static-cards/loadAssets';
 
@@ -17,6 +18,7 @@ export default function MyApp({ Component, pageProps }) {
   getBackgroundPath();
 
   useEffect(() => {
+    loadVideoCardAssets();
     loadAccordionAssets();
     loadStaticCardsAssets();
   }, []);
@@ -25,6 +27,7 @@ export default function MyApp({ Component, pageProps }) {
     <FaustProvider pageProps={pageProps}>
       <Head>
         <link rel='stylesheet' href='./css/main.css' />
+        <link rel='stylesheet' href='./styles.css' />
         <script
           src='https://code.jquery.com/jquery-3.7.1.min.js'
           async
