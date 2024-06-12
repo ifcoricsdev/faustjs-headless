@@ -1,9 +1,6 @@
 const cssFiles = ['./blocks/accordion/assets/css/block.css'];
 
-const jsFiles = [
-  './blocks/accordion/assets/js/3rd-party/accordion.js',
-  './blocks/accordion/assets/js/if-accordion-init.js',
-];
+const jsFiles = ['./blocks/accordion/assets/js/if-accordion-init.js'];
 
 const createLinkElement = (href) => {
   const link = document.createElement('link');

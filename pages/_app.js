@@ -9,6 +9,8 @@ import Head from 'next/head';
 import { loadVideoCardAssets } from '../utils/video-card/loadAssets';
 import { loadAccordionAssets } from '../utils/accordion/loadAssets';
 import { loadStaticCardsAssets } from '../utils/static-cards/loadAssets';
+import { loadTestimonialCardsAssets } from '../utils/testimonial-cards/loadAssets';
+import { loadStorySliderAssets } from '../utils/story-slider/loadAssets';
 
 import { getBackgroundPath } from '../utils/static-cards/getBackgroundPath';
 
@@ -21,17 +23,25 @@ export default function MyApp({ Component, pageProps }) {
     loadVideoCardAssets();
     loadAccordionAssets();
     loadStaticCardsAssets();
+    loadStorySliderAssets();
+    loadTestimonialCardsAssets();
   }, []);
 
   return (
     <FaustProvider pageProps={pageProps}>
       <Head>
+        <link rel='stylesheet' href='./blocks/assets/css/globals.css' />
         <link rel='stylesheet' href='./css/main.css' />
         <link rel='stylesheet' href='./styles.css' />
-        <script
-          src='https://code.jquery.com/jquery-3.7.1.min.js'
-          async
-        ></script>
+        <link rel='stylesheet' href='./css/3rd-party/slick.css' />
+        <link rel='stylesheet' href='./css/3rd-party/slick-theme.css' />
+        <link rel='stylesheet' href='./css/3rd-party/glightbox.min.css' />
+        <script src='./js/jquery-3.7.1.min.js'></script>
+        <script src='./blocks/assets/js/blocks.js'></script>
+        <script src='./js/3rd-party/slick.js'></script>
+        <script src='./js/3rd-party/accordion.js'></script>
+        <script src='./js/3rd-party/lity.js'></script>
+        <script src='./js/3rd-party/glightbox.min.js'></script>
       </Head>
       <Component {...pageProps} key={router.asPath} />
     </FaustProvider>

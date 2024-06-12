@@ -1,7 +1,6 @@
 const cssFiles = ['./blocks/video-card/assets/css/block.css'];
 
 const jsFiles = [
-  './blocks/video-card/assets/js/lity.js',
   './blocks/video-card/assets/js/init-inline-youtube-embed.js',
   './blocks/video-card/assets/js/init-inline-vimeo-embed.js',
 ];
