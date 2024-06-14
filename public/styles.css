@@ -10,3 +10,7 @@ div.wp-block-group.ibf-video-card-group .ibf-video-card {
   height: auto !important;
   min-height: 300px !important;
 }
+
+.ibf-linkableimage.bg-color-overlay {
+  min-height: 23rem !important;
+}

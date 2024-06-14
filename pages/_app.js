@@ -23,25 +23,24 @@ export default function MyApp({ Component, pageProps }) {
     loadVideoCardAssets();
     loadAccordionAssets();
     loadStaticCardsAssets();
-    loadStorySliderAssets();
-    loadTestimonialCardsAssets();
+    // loadStorySliderAssets();
+    // loadTestimonialCardsAssets();
   }, []);
 
   return (
     <FaustProvider pageProps={pageProps}>
       <Head>
-        <link rel='stylesheet' href='./blocks/assets/css/globals.css' />
         <link rel='stylesheet' href='./css/main.css' />
         <link rel='stylesheet' href='./styles.css' />
         <link rel='stylesheet' href='./css/3rd-party/slick.css' />
         <link rel='stylesheet' href='./css/3rd-party/slick-theme.css' />
         <link rel='stylesheet' href='./css/3rd-party/glightbox.min.css' />
         <script src='./js/jquery-3.7.1.min.js'></script>
-        <script src='./blocks/assets/js/blocks.js'></script>
         <script src='./js/3rd-party/slick.js'></script>
         <script src='./js/3rd-party/accordion.js'></script>
         <script src='./js/3rd-party/lity.js'></script>
         <script src='./js/3rd-party/glightbox.min.js'></script>
+        <script src='./js/3rd-party/flickity.pkgd.min.js'></script>
       </Head>
       <Component {...pageProps} key={router.asPath} />
     </FaustProvider>
